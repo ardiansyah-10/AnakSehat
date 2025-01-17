@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AnakSehat" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/main_blue</item>
+        <item name="colorOnPrimary">@color/main_white</item>
+        <item name="colorSecondary">@color/sec_blue</item>
+        <item name="colorOnSecondary">@color/main_white</item>
+        <item name="colorSurface">@color/main_white</item>
+        <item name="colorOnSurface">@color/main_blue</item>
+        <item name="android:statusBarColor">@color/main_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:itemBackground">@drawable/popup_bg</item>
+        <item name="android:itemTextAppearance">@style/CustomTextMenu</item>
+    </style>
+
+    <style name="CustomActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/ter_blue</item>
+    </style>
+
+    <style name="CustomTextMenu" parent="android:TextAppearance.DeviceDefault.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:fontFamily">@font/fig_500</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomActiveText" parent="android:TextAppearance.DeviceDefault.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/main_blue</item>
+        <item name="android:fontFamily">@font/fig_600</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

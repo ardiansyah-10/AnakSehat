@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Base.Theme.AnakSehat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.Material3.Button.IconButton"
+        app:rippleColor="@color/ripple_blue"
+        android:id="@+id/back_btn"
+        app:icon="@drawable/ic_back"
+        app:iconSize="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fig_700"
+        android:text="Ubah Data Anak"
+        android:textColor="@color/main_blue"
+        android:textSize="36sp"
+        android:layout_marginStart="15dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/childName_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="7dp"
+        android:textColorHint="@color/sec_grey"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/main_blue"
+        app:boxStrokeWidth="2dp"
+        app:cursorColor="@color/main_blue"
+        app:hintTextColor="@color/main_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/childName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fig_500"
+            android:hint="Masukkan Nama Anak"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/main_blk"
+            android:textColorHint="@color/sec_blk"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/childAge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:textColorHint="@color/sec_grey"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/main_blue"
+        app:boxStrokeWidth="2dp"
+        app:cursorColor="@color/main_blue"
+        app:hintTextColor="@color/main_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/childAge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fig_500"
+            android:hint="Masukkan Umur Anak"
+            android:inputType="number"
+            android:padding="18dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/main_blk"
+            android:textColorHint="@color/sec_blk"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/childWeight_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:textColorHint="@color/sec_grey"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/main_blue"
+        app:boxStrokeWidth="2dp"
+        app:cursorColor="@color/main_blue"
+        app:hintTextColor="@color/main_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/childWeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fig_500"
+            android:hint="Masukkan Berat Anak"
+            android:inputType="number"
+            android:padding="18dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/main_blk"
+            android:textColorHint="@color/sec_blk"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/childeHeight_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:textColorHint="@color/sec_grey"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/main_blue"
+        app:boxStrokeWidth="2dp"
+        app:cursorColor="@color/main_blue"
+        app:hintTextColor="@color/main_blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/childHeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fig_500"
+            android:hint="Masukkan Tinggi Anak"
+            android:inputType="number"
+            android:padding="18dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/main_blk"
+            android:textColorHint="@color/sec_blk"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/batal"
+            android:id="@+id/cancelButton"
+            android:layout_marginHorizontal="5dp"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:textColor="@color/main_blue"
+            app:strokeColor="@color/main_blue"
+            android:fontFamily="@font/fig_500"
+            android:textSize="20sp"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan"
+            android:id="@+id/saveButton"
+            android:layout_marginHorizontal="5dp"
+            style="@style/Widget.Material3.Button"
+            android:textColor="@color/main_white"
+            android:fontFamily="@font/fig_600"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.ChildRegistActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_btn"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        app:icon="@drawable/ic_back"
+        app:iconSize="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/ripple_blue" />
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fig_700"
+        android:text="Tambah Data Anak"
+        android:textAlignment="center"
+        android:textColor="@color/main_blue"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_btn" />
+
+    <LinearLayout
+        android:id="@+id/form_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/namaAnak"
+            android:textColor="@color/main_blue"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namaAnak_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/sec_grey"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/main_blue"
+            app:boxStrokeWidth="2dp"
+            app:cursorColor="@color/main_blue"
+            app:hintTextColor="@color/main_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/namaAnak"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/fig_500"
+                android:hint="Masukkan Nama Anak"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/main_blk"
+                android:textColorHint="@color/sec_blk"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/fig_600"
+            android:text="Umur (dalam bulan)"
+            android:textColor="@color/main_blue"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/umur_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/sec_grey"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/main_blue"
+            app:boxStrokeWidth="2dp"
+            app:cursorColor="@color/main_blue"
+            app:hintTextColor="@color/main_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/umur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/fig_500"
+                android:hint="Masukkan Umur Anak"
+                android:inputType="number"
+                android:padding="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/main_blk"
+                android:textColorHint="@color/sec_blk"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/jenisKelamin"
+            android:textColor="@color/main_blue"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/sec_grey"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/main_blue"
+            app:boxStrokeWidth="2dp"
+            app:endIconTint="@color/sec_blk"
+            app:hintTextColor="@color/main_blue">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/jenisKelamindropdown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/fig_500"
+                android:gravity="center_vertical"
+                android:hint="Pilih Jenis Kelamin"
+                android:inputType="none"
+                android:padding="18dp"
+                android:textColor="@color/main_blk"
+                android:textColorHint="@color/sec_blk"
+                android:textSize="22sp"
+                app:dropDownBackgroundTint="@color/main_white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/namaOrtu"
+            android:textColor="@color/main_blue"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namaOrtu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/sec_grey"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/main_blue"
+            app:boxStrokeWidth="2dp"
+            app:cursorColor="@color/main_blue"
+            app:hintTextColor="@color/main_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/namaOrtu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/fig_500"
+                android:hint="Masukkan Nama Ortu/Wali"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/main_blk"
+                android:textColorHint="@color/sec_blk"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@color/main_blue"
+        android:fontFamily="@font/fig_600"
+        android:text="Simpan"
+        android:textColor="@color/main_white"
+        android:textSize="20sp"
+        app:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_wrapper"
+        app:rippleColor="@color/ripple_blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

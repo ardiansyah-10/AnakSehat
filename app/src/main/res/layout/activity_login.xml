@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg4"
+    tools:context=".auth.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back_btn"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/main_white"
+            app:icon="@drawable/ic_back"
+            app:iconSize="36dp"
+            app:rippleColor="@color/ripple_blue" />
+
+        <ImageView
+            android:id="@+id/topLogo"
+            android:layout_width="155dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title_bg"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/logotype"/>
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/cardForm"
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="3dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_title"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_title"
+                android:text="@string/masuk"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/main_blue"
+                android:fontFamily="@font/fig_700" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Nama Pengguna"
+                android:textSize="20sp"
+                android:textColor="@color/main_blue"
+                android:fontFamily="@font/fig_600"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/username_layout"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxStrokeColor="@color/main_blue"
+                app:boxStrokeWidth="2dp"
+                app:hintTextColor="@color/main_blue"
+                android:textColorHint="@color/sec_grey"
+                app:cursorColor="@color/main_blue">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/username_login_field"
+                    android:inputType="text"
+                    android:hint="Masukkan Nama Pengguna"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/main_grey"
+                    android:padding="18dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/main_blk"
+                    android:fontFamily="@font/fig_500" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sandi"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/main_blue"
+                android:fontFamily="@font/fig_600"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/password_layout"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:boxCornerRadiusTopStart="15dp"
+                app:boxCornerRadiusBottomEnd="15dp"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxStrokeColor="@color/main_blue"
+                app:boxStrokeWidth="2dp"
+                app:hintTextColor="@color/main_blue"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/sec_blk"
+                app:passwordToggleDrawable="@drawable/password_toggle"
+                android:textColorHint="@color/sec_grey"
+                app:cursorColor="@color/main_blue">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/password_login_field"
+                    android:padding="18dp"
+                    android:inputType="textPassword"
+                    android:hint="Masukkan Kata Sandi"
+                    android:textAlignment="textStart"
+                    android:textColorHint="@color/main_grey"
+                    android:textSize="22sp"
+                    android:textColor="@color/main_blk"
+                    android:fontFamily="@font/fig_500"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum punya akun?"
+                    android:fontFamily="@font/fig_500"
+                    android:textColor="@color/sec_blk"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:id="@+id/ask"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Daftar"
+                    android:id="@+id/textDaftar"
+                    android:fontFamily="@font/fig_700"
+                    android:textColor="@color/main_blue"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/ask"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Lupa kata sandi?"
+                android:id="@+id/forgotPassword"
+                android:fontFamily="@font/fig_700"
+                android:textColor="@color/main_blue"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/masuk"
+                android:id="@+id/login_btn"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fig_600"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

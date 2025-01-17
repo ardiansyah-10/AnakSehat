@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/bocils" />
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/fig_700"
+        android:text="Halo, Selamat Datang di Aplikasi"
+        android:textColor="@color/main_blue"
+        android:textSize="42sp" />
+
+    <ImageView
+        android:id="@+id/logo_title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/greetings"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/logotype" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/regist_btn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/illustration"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/daftar"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regist_btn"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/masuk"
+            android:textSize="20sp"
+            app:strokeColor="@color/main_blue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tutorialText"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fig_700"
+            android:text="@string/tutorial"
+            android:textColor="@color/main_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

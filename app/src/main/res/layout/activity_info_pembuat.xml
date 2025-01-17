@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white"
+    tools:context=".info.InfoPembuatActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.Material3.Button.IconButton"
+        app:rippleColor="@color/ripple_blue"
+        android:id="@+id/back_btn"
+        app:icon="@drawable/ic_back"
+        app:iconSize="36dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/fig_700"
+        android:text="Info Pembuat"
+        android:textAlignment="center"
+        android:textColor="@color/main_blue"
+        android:textSize="28sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPitra"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/logo_container"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pitra" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/fig_500"
+                android:text="@string/dataPitra"
+                android:textColor="@color/main_blk"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNopal"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/cardPitra"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nopal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/fig_500"
+                android:text="@string/dataNopal"
+                android:textColor="@color/main_blk"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/logopnj"
+            android:layout_width="85dp"
+            android:layout_height="85sp"
+            android:layout_margin="5dp"
+            android:src="@drawable/logopnj"/>
+        <ImageView
+            android:id="@+id/logohme"
+            android:layout_width="85dp"
+            android:layout_height="85sp"
+            android:layout_margin="5dp"
+            android:src="@drawable/logohme"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="381dp"
+        android:layout_height="251dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-56dp"
+        android:src="@drawable/decor" />
+</RelativeLayout>

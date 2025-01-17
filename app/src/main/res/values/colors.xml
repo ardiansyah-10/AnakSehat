@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFDFDFD</color>
+    <color name="main_blue">#FF098DB3</color>
+    <color name="sec_blue">#A1C4F7</color>
+    <color name="ter_blue">#094770</color>
+    <color name="qua_blue">#38A0D1</color>
+    <color name="ripple_blue">#2938A0D1</color>
+    <color name="white_blue">#B8E3F1</color>
+    <color name="main_white">#FFF6F6F6</color>
+    <color name="sec_white">#FFE1E1E1</color>
+    <color name="ter_white">#E6F3F8</color>
+    <color name="main_blk">#171717</color>
+    <color name="sec_blk">#353535</color>
+    <color name="main_grey">#A9A9A9</color>
+    <color name="sec_grey">#C6C6C6</color>
+    <color name="ter_grey">#707070</color>
+    <color name="warning">#EA1D1D</color>
+</resources>

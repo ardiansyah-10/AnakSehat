@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_nav"
+        android:title="Beranda"
+        android:icon="@drawable/navbar_home_icon" />
+    <item
+        android:id="@+id/weight_nav"
+        android:title="Timbang"
+        android:icon="@drawable/navbar_weight_icon"/>
+    <item
+        android:id="@+id/profil_nav"
+        android:title="Profil"
+        android:icon="@drawable/navbar_acc_icon"/>
+</menu>

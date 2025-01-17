@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3.5dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/namaAnak"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fig_600"
+            android:text="Nama Anak"
+            android:textColor="@color/main_blue"
+            android:textSize="28sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toEndOf="@+id/namaAnak"
+            android:fontFamily="@font/fig_400"
+            android:text="|"
+            android:textColor="@color/main_blue"
+            android:textSize="28sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/umurAnak"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/divider"
+            android:fontFamily="@font/fig_600"
+            android:text="NaN"
+            android:textColor="@color/main_blue"
+            android:textSize="28sp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/umurAnak"
+            android:fontFamily="@font/fig_600"
+            android:text="@string/bulan"
+            android:textColor="@color/main_blue"
+            android:textSize="28sp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

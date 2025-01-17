@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white"
+    tools:context=".PastHistoryActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.Material3.Button.IconButton"
+        app:rippleColor="@color/ripple_blue"
+        android:id="@+id/back_btn"
+        app:icon="@drawable/ic_back"
+        app:iconSize="36dp" />
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/back_btn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/fig_700"
+        android:text="Data Anak"
+        android:textColor="@color/main_blue"
+        android:textSize="32sp" />
+
+    <ScrollView
+        android:id="@+id/DataAnak_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeTitle"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="15dp">
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fig_700"
+                android:text="@string/namaAnak"
+                android:textColor="@color/main_blue"
+                android:textSize="28sp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/w1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/w1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/umurText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_600"
+                        android:text="@string/umur"
+                        android:textColor="@color/main_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/umur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/umurText"
+                        android:fontFamily="@font/fig_700"
+                        android:text="-"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/umurText"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/umur"
+                        android:fontFamily="@font/fig_700"
+                        android:text="Bulan"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/w1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/JKText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_600"
+                        android:text="@string/jenisKelamin"
+                        android:textColor="@color/main_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/jenisKelamin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/JKText"
+                        android:fontFamily="@font/fig_700"
+                        android:text="-"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/w2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/w2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/BBText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_600"
+                        android:text="@string/beratBadan"
+                        android:textColor="@color/main_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/beratBadan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/BBText"
+                        android:fontFamily="@font/fig_700"
+                        android:text="-"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/BBText"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/beratBadan"
+                        android:fontFamily="@font/fig_700"
+                        android:text="kg"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/w2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/TBText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_600"
+                        android:text="@string/tinggiBadan"
+                        android:textColor="@color/main_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tinggiBadan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TBText"
+                        android:fontFamily="@font/fig_700"
+                        android:text="-"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TBText"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/tinggiBadan"
+                        android:fontFamily="@font/fig_700"
+                        android:text="cm"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/w3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/w3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/IMTText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_600"
+                        android:text="IMT"
+                        android:textColor="@color/main_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/IMT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/IMTText"
+                        android:fontFamily="@font/fig_700"
+                        android:text="-"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/w3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/categoryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fig_600"
+                        android:text="Kategori"
+                        android:textColor="@color/main_blue"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/categoryText"
+                        android:fontFamily="@font/fig_700"
+                        android:text="-"
+                        android:textColor="@color/main_blue"
+                        android:textSize="28sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_bg"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fig_700"
+                    android:textColor="@color/main_blue"
+                    android:textSize="20sp"
+                    android:text="Saran :"/>
+                <TextView
+                    android:id="@+id/saran"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/fig_600"
+                    android:textColor="@color/sec_blk"
+                    android:textSize="16sp"
+                    android:text="-"
+                    android:textAlignment="textStart"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fig_600"
+                android:text="Grafik Perkembangan"
+                android:textColor="@color/main_blue"
+                android:textSize="22sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chart_bg"
+                android:padding="15dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp">
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Main background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/main_blue" />
+            <padding android:top="10dp" android:bottom="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Bottom line -->
+    <item android:bottom="-7.5dp" android:top="-10dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Color of the bottom line -->
+<!--            <size android:height="0dp" /> &lt;!&ndash; Thickness of the bottom line &ndash;&gt;-->
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">AnakSehat</string>
+    <string name="logo">LOGO</string>
+    <string name="home_title">Daftar Nama Anak</string>
+    <string name="timbang_title">Ayo Timbang!</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="namaAnak">Nama Anak</string>
+    <string name="sandi">Kata Sandi</string>
+    <string name="jenisKelamin">Jenis Kelamin</string>
+    <string name="beratBadan">Berat Badan</string>
+    <string name="tinggiBadan">Tinggi Badan</string>
+    <string name="namaOrtu">Nama Orang Tua/Wali</string>
+    <string name="konfirmasiSandi">Konfirmasi Kata Sandi</string>
+    <string name="namaBalita">Nama Balita</string>
+    <string name="namaBaduta">Nama Baduta</string>
+    <string name="tanggalLahir">Tanggal Lahir</string>
+    <string name="balita">Balita</string>
+    <string name="baduta">Baduta</string>
+    <string name="tambahAnak"> Tambah Data Anak</string>
+    <string name="timbang">Timbang</string>
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="umur">Umur</string>
+    <string name="bulan">Bulan</string>
+    <string name="user">Nama Pengguna</string>
+    <string name="keluar">Keluar</string>
+    <string-array name="gender_options">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="acc_type">
+        <item>Petugas</item>
+        <item>Pengguna</item>
+    </string-array>
+    <string name="dataPitra">
+        Nama : Fitra Ramdhani
+        \nNIM : 2103332029
+        \nProdi  : Telekomunikasi
+    </string>
+    <string name="dataNopal">
+        Nama : Naufal Arif A.
+        \nNIM : 2103332032
+        \nProdi  : Telekomunikasi
+    </string>
+
+    <string name="infoAlat">
+        Alat ini berfungsi untuk menimbang dan mengukur tinggi badan baduta dan balita, hasil yang sudah tersimpan akan dapat dilihat oleh petugas serta orang tua anak pada aplikasi ini. Jadi petugas tidak perlu mencatat di kartu perkembangan anak dan orang tua bisa dengan mudah jika ini mengecek kembali data anaknya.
+    </string>
+
+    <string name="infoApp">
+        Aplikasi ini berfungsi untuk melihat, mengubah, menambah, dan menghapus data anak yang akan di timbang. Petugas akan diberikan akses untuk melihat, mengubah, menambah, dan menghapus data anak, sedangkan pengguna hanya dapat melihat data anaknya masing-masing yang telah di timbang. Petugas juga dapat penyimpan data hasil timbang anak yang telah di timbang.
+    </string>
+
+    <string name="step1app">
+        Daftarkan akun anda sebagai pengguna atau petugas, jika sudah memiliki akun, masuk menggunakan akun yang sudah ada. \n
+    </string>
+
+    <string name="step2app">
+        Pada sisi petugas, petugas dapat menambahkan data anak yang akan di timbang, jika data anak belum ada. Tambahkan data anak yang akan di timbang, jika data anak belum ada. \n
+    </string>
+
+    <string name="step3app">
+        Pada bagian "Timbang" pilih anak yang akan ditimbang dan tunggu sampai timbangan selesai menimbang, lalu klik tombol "Simpan" untuk menyimpan hasil timbangan. \n
+    </string>
+
+    <string name="step4app">
+        Untuk melihat data anak, tekan bagian "Beranda" dan pilih kategori anak apakah "Balita" atau "Baduta", lalu tekan nama anak yang ingin dilihat datanya. \n
+    </string>
+
+    <string name="step5app">
+        Pada sisi pengguna, untuk melihat data anak cukup tekan nama anak yang ingin dilihat datanya pada bagian "Beranda".
+    </string>
+
+    <string name="step1alat">
+        Naikkan anak ke atas timbangan. \n
+    </string>
+
+    <string name="step2alat">
+        Tekan tombol mode pada keypad, mode akan tertera pada layar LCD. \n
+    </string>
+
+    <string name="step3alat">
+        Tunggu sampai timbangan selesai menimbang dan mengukur tinggi badan pada balita. \n
+
+    </string>
+
+    <string name="step4alat">
+        Untuk baduta bisa menimbang terlebih dahulu, setelah itu panjang baduta akan diukur menggunakan alat pengukur panjang, dan masukkan hasil pengukuran panjang balita menggunakan keypad yang tersedia pada alat. \n
+    </string>
+
+    <string name="step5alat">
+        Tunggu alat menyimpan data, lalu tekan tombol simpan pada aplikasi. \n
+    </string>
+    <string name="step6alat">
+        Data hasil penimbangan akan terlihat pada aplikasi.
+    </string>
+
+    <string name="tutorial">
+        <u>Cara Pakai</u>
+    </string>
+
+    <string name="saranGiziBuruk">
+       Konsultasi dengan Tenaga Medis: Segera konsultasikan dengan dokter anak atau ahli gizi untuk mendapatkan rencana perawatan yang tepat.
+        \n\nPemberian Makanan Tambahan: Berikan makanan tambahan yang kaya akan kalori dan nutrisi, seperti susu formula khusus atau suplemen gizi.
+        \n\nPola Makan Teratur: Pastikan anak makan dalam porsi kecil namun sering, dengan makanan yang kaya protein, lemak sehat, dan vitamin.
+        \n\nPantauan Berkala: Lakukan pemantauan berat dan tinggi badan anak secara berkala untuk memastikan adanya perbaikan.
+    </string>
+
+    <string name="saranGiziKurang">
+        Perbaikan Pola Makan: Tambahkan lebih banyak protein, karbohidrat kompleks, dan lemak sehat dalam diet harian anak.
+        \n\nFrekuensi Makan: Tingkatkan frekuensi makan dengan memberikan camilan sehat di antara waktu makan utama.
+        \n\nMultivitamin: Pertimbangkan pemberian suplemen multivitamin setelah berkonsultasi dengan dokter.
+        \n\nAktivitas Fisik yang Seimbang: Pastikan anak tetap aktif namun tidak terlalu lelah, untuk menjaga keseimbangan energi.
+    </string>
+
+    <string name="saranGiziBaik">
+        Pola Makan Seimbang: Pertahankan pola makan seimbang yang mencakup semua kelompok makanan utama.
+        \n\nAktivitas Fisik: Dorong anak untuk tetap aktif melalui permainan dan aktivitas fisik yang menyenangkan.
+        \n\nPemantauan Berkala: Tetap lakukan pemantauan berkala terhadap pertumbuhan dan perkembangan anak.
+        \n\nHidrasi yang Cukup: Pastikan anak mendapatkan asupan cairan yang cukup setiap hari.
+    </string>
+
+    <string name="saranResikoGiziLebih">
+        Kontrol Porsi Makan: Ajarkan anak untuk makan dengan porsi yang sesuai dan menghindari makan berlebihan.
+        \n\nMakanan Sehat: Kurangi asupan makanan tinggi gula dan lemak jenuh, dan fokus pada makanan yang kaya serat dan nutrisi.
+        \n\nAktivitas Fisik: Tingkatkan aktivitas fisik anak dengan permainan luar ruangan dan olahraga ringan.
+        \n\nPemantauan Berat Badan: Pantau berat badan secara teratur untuk mencegah peningkatan berat badan yang tidak sehat.
+    </string>
+
+    <string name="saranGiziLebih">
+        Diet Seimbang: Fokus pada diet yang seimbang dengan lebih banyak sayuran, buah, dan protein tanpa lemak.
+        \n\nKurangi Junk Food: Hindari makanan cepat saji, minuman manis, dan camilan tinggi kalori.
+        \n\nAktivitas Rutin: Tingkatkan aktivitas fisik harian, seperti bermain di luar, berjalan kaki, atau berenang.
+        \n\nPendidikan Gizi: Ajarkan anak tentang pentingnya makanan sehat dan kebiasaan makan yang baik.
+    </string>
+
+    <string name="saranObesitas">
+        Konsultasi Medis: Segera berkonsultasi dengan dokter anak atau ahli gizi untuk mendapatkan rencana penurunan berat badan yang tepat.
+        \n\nProgram Diet Khusus: Ikuti program diet khusus yang direkomendasikan oleh ahli gizi, dengan fokus pada makanan rendah kalori namun tinggi nutrisi.
+        \n\nAktivitas Fisik Intensif: Dorong aktivitas fisik yang lebih intensif dan teratur, sesuai dengan kemampuan anak.
+        \n\nDukungan Keluarga: Pastikan seluruh keluarga mendukung anak dalam mengubah pola makan dan gaya hidup yang lebih sehat.
+        \n\nPemantauan Ketat: Pantau kemajuan anak dengan pemeriksaan berat dan tinggi badan secara rutin untuk memastikan adanya kemajuan positif.
+    </string>
+    <string name="Diperlukan">Diperlukan</string>
+
+
+</resources>

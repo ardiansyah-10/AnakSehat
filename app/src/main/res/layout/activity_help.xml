@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg4"
+    tools:context=".help.HelpActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back_btn"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/main_white"
+            app:icon="@drawable/ic_back"
+            app:iconSize="36dp"
+            app:rippleColor="@color/ripple_blue"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara\nPengoperasian"
+            android:textAlignment="center"
+            android:fontFamily="@font/fig_700"
+            android:textSize="28sp"
+            android:lineHeight="24dp"
+            android:textColor="@color/main_blue"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title_bg"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAlat"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            style="@style/Widget.Material3.CardView.Outlined"
+            app:rippleColor="@color/ripple_blue"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_weight_filled"
+                    app:tint="@color/main_blue" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fig_600"
+                    android:text="Alat"
+                    android:textAlignment="center"
+                    android:textColor="@color/main_blue"
+                    android:textSize="24sp"
+                    android:lineHeight="22dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardApp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:padding="20dp"
+            style="@style/Widget.Material3.CardView.Outlined"
+            app:rippleColor="@color/ripple_blue"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/logo"
+                    app:tint="@color/main_blue" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fig_600"
+                    android:text="Aplikasi"
+                    android:textAlignment="center"
+                    android:textColor="@color/main_blue"
+                    android:textSize="24sp"
+                    android:lineHeight="22dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</RelativeLayout>

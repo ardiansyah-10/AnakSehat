@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/editData"
+        android:title="Ubah"
+        android:icon="@drawable/ic_edit"
+        android:iconTint="@color/main_blue" />
+
+    <item
+        android:id="@+id/deleteData"
+        android:title="Hapus"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/main_blue"/>
+
+</menu>

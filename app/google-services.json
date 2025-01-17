@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "141552479988",
+    "firebase_url": "https://anaksehat-17915-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "anaksehat-17915",
+    "storage_bucket": "anaksehat-17915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141552479988:android:3fc427fd2d91d209b538a1",
+        "android_client_info": {
+          "package_name": "com.example.anaksehat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdEqbG69KMdoxlauAvxIpnWNGke869E3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141552479988:android:19bba6c9f6a6fd6eb538a1",
+        "android_client_info": {
+          "package_name": "com.telkom21.anaksehat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdEqbG69KMdoxlauAvxIpnWNGke869E3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
